@@ -1,0 +1,19 @@
+package fileIO.driver;
+
+import fileIO.FileIO;
+import fileIO.io.FileIn;
+import fileIO.io.FileOut;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		FileIO fio = FileIO.getInstance();
+		FileIn in = fio.getFileIn();
+		String line;
+		while ( (line = in.read(" ")) != null)
+		FileOut out = fio.getFileOut();
+		out.write("Hiya");
+		out.saveFile();
+	}
+
+}

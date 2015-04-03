@@ -1,0 +1,12 @@
+package fileIO.driver;
+
+import fileIO.FileIO;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		FileIO fio = FileIO.getInstance();
+		fio.fileOut.write("Hiya!");
+	}
+
+}

@@ -1,0 +1,13 @@
+package fileIO.exceptions;
+
+public class InvalidArgumentException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3418636092482061048L;
+
+	public InvalidArgumentException(String message){
+		super(message);
+	}
+}

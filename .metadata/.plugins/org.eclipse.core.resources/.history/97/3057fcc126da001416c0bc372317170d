@@ -1,0 +1,22 @@
+package fileIO;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Path;
+
+import fileIO.io.FileIn;
+import fileIO.io.FileOut;
+
+public final class FileIO {
+
+	private FileIn fileIn = null;
+	private FileOut fileOut = null;
+	
+	private Path path = null;
+	
+	private FileIO(File theFile, boolean read, boolean write) throws FileNotFoundException {
+		
+		fileIn = new FileIn(theFile.toPath());
+		
+	}
+}

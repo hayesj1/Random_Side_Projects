@@ -1,0 +1,10 @@
+package fileIO;
+
+import fileIO.io.FileIn;
+import fileIO.io.FileOut;
+
+public class FileIO {
+
+	private FileIn fileIn = null;
+	private FileOut fileOut = null;
+}

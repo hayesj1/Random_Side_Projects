@@ -1,0 +1,14 @@
+package fileIO.exceptions;
+
+public class InvalidArgumentToConstructorException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3418636092482061048L;
+
+	public InvalidArgumentException() {
+		this("")
+	}
+	protected InvalidArgumentException(String message){ super(message); }
+}

@@ -1,0 +1,13 @@
+package fileIO.driver;
+
+import fileIO.FileIO;
+import fileIO.io.FileOut;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		FileIO fio = FileIO.getInstance();
+		FileOut out = FileIO.fileOut;
+	}
+
+}

@@ -1,0 +1,42 @@
+package fileIO;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Path;
+
+import fileIO.exceptions.InvalidArgumentToConstructorException;
+import fileIO.io.FileIn;
+import fileIO.io.FileOut;
+
+public abstract class FileIO {
+
+	private static FileIn fileIn = null;
+	private static FileOut fileOut = null;
+	
+	private Path path = null;
+	/**
+	 * Constructor for fileIn and fileOut. <code>boolean read</code> and/or <code>boolean write</code> must be true, but not neither
+	 * @param theFile the file in question
+	 * @param read true if the file should be readable
+	 * @param write true if the file should be writable
+	 * @throws InvalidArgumentToConstructorException if neither <code>read</code> or <code>write</code> are true
+	 * @throws IOException if the file is un-openable for some reason
+	 */
+	private FileIO(File theFile, boolean read, boolean write) throws InvalidArgumentToConstructorException, IOException {
+		if (read && !write) {
+			this.fileIn = new FileIn(theFile.toPath());
+		} else if (write && !read) {
+			this.fileOut = new FileOut(theFile.toPath());
+		} else if (write && read) {
+			this.fileIn = new FileIn(theFile.toPath());
+			this.fileOut = new FileOut(theFile.toPath());
+		} else {
+			throw new InvalidArgumentToConstructorException();
+		}
+	}
+		public static FileIn getIn() {
+			
+		}
+	}
+}
