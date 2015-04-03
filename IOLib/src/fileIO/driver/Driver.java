@@ -1,10 +1,22 @@
 package fileIO.driver;
 
+import fileIO.FileIO;
+import fileIO.io.FileIn;
+import fileIO.io.FileOut;
+
 public class Driver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		FileIO fio = FileIO.getInstance();
+		FileIn in = fio.getFileIn();
+		String line[];
+		while ( (line = in.read(" ")) != null) {
+			for (int i = 0; i < line.length; i++)
+				System.out.println(line[i]);
+		}
+		FileOut out = fio.getFileOut();
+		out.write("Hiya");
+		out.saveFile();
 	}
 
 }
