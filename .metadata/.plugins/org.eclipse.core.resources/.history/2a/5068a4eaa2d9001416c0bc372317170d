@@ -1,0 +1,8 @@
+package fileIO.io.out;
+
+import fileIO.io.FileIO;
+
+public class FileOut extends FileIO {
+
+
+}

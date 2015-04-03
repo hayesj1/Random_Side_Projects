@@ -1,8 +1,0 @@
-package main;
-
-public class Vector {
-
-	Double x;
-	Double y;
-	Double z;
-}

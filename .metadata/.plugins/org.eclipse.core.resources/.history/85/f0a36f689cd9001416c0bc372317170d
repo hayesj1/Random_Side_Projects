@@ -1,0 +1,8 @@
+package fileIO.out;
+
+import java.io.File;
+
+public class FileOut {
+
+	private File file = null;
+}

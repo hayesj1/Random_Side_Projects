@@ -1,8 +1,0 @@
-package main;
-
-public class VecMain {
-
-	public static void main(String[] args) {
-		
-	}
-}

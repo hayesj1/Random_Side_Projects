@@ -1,0 +1,9 @@
+package fileIO.io;
+
+import java.io.File;
+
+public abstract class FileIO {
+
+	protected File file = null;
+	
+}

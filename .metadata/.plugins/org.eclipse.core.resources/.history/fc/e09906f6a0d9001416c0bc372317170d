@@ -1,0 +1,9 @@
+package fileIO.io;
+
+import java.io.File;
+
+public class FileIO {
+
+	private File file = null;
+	
+}

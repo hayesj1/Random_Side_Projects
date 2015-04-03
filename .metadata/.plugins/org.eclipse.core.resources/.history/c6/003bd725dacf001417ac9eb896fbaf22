@@ -1,8 +1,0 @@
-package vector;
-
-public class VectorFactory {
-
-	public VectorFactory() {
-		
-	}
-}

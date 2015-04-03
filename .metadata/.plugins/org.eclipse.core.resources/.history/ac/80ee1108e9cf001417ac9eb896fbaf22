@@ -1,7 +1,0 @@
-package operations;
-
-import java.util.Scanner;
-
-public class VectorScanner extends Scanner {
-
-}

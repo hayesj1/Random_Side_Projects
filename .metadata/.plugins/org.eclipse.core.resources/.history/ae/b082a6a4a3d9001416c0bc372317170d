@@ -1,0 +1,10 @@
+package fileIO.io.in;
+
+import java.io.BufferedWriter;
+
+import fileIO.io.FileIO;
+
+public class FileIn extends FileIO {
+
+	private BufferedReader reader = null;
+}

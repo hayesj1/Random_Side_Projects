@@ -1,0 +1,18 @@
+package fileIO.io.out;
+
+import java.nio.file.Path;
+
+import fileIO.io.FileIO;
+
+public class FileOut extends FileIO {
+
+	protected FileOut(Path path) { super(path); }
+
+	@Override
+	public void saveFile() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}

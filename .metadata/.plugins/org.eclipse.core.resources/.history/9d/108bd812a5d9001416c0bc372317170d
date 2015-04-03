@@ -1,0 +1,39 @@
+package fileIO.io.in;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import fileIO.io.FileIO;
+
+public class FileIn extends FileIO {
+
+	private BufferedReader reader = null;
+	
+	protected FileIn(String path) throws IOException { this(Paths.get(path)); }
+	protected FileIn(Path path) throws FileNotFoundException {
+		super(path);
+		this.reader = new BufferedReader(new FileReader(this.file));
+	}
+
+	@Override
+	public void saveFile() { }
+	
+	public String[] read(String delimiter) {
+		String line;
+		try {
+			line = reader.readLine();
+			if (line == null) {
+				return null;
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	public BufferedReader getReader() { return reader; };
+}

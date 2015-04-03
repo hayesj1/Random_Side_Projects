@@ -1,0 +1,7 @@
+package fileIO.io.in;
+
+import fileIO.io.FileIO;
+
+public class FileIn extends FileIO {
+
+}

@@ -1,0 +1,21 @@
+package fileIO.io.in;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.nio.file.Path;
+
+import fileIO.io.FileIO;
+
+public class FileIn extends FileIO {
+
+	protected FileIn(Path path) {
+		super(path);
+		this.reader = new BufferedReader(new FileReader(this.file));
+	}
+
+	private BufferedReader reader = null;
+
+	@Override
+	public void saveFile() { }
+}
