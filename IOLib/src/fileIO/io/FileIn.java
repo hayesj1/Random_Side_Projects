@@ -7,7 +7,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import fileIO.io.FileIO;
+
 public final class FileIn extends FileIO {
+
 	private BufferedReader reader = null;
 	
 	protected FileIn(String path) throws IOException { this(Paths.get(path)); }

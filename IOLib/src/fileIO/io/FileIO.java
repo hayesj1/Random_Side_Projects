@@ -11,10 +11,7 @@ import java.nio.file.Paths;
  * <p>
  * This class is the base class for FileIO classes doing the actual IO operations
  */
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-public abstract class FileIO {
+abstract class FileIO {
 
 	/** The File which gets read or written to */
 	protected File file = null;
