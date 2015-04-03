@@ -1,4 +1,8 @@
+<<<<<<< HEAD:IOLib/src/fileIO/io/FileIn.java
 package fileIO.io;
+=======
+package fileIO.io.in;
+>>>>>>> parent of 729c349... Finished off the FileIO part of library:IOLib/src/fileIO/io/in/FileIn.java
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,11 +11,22 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+import fileIO.io.FileIO;
+
+<<<<<<< HEAD:IOLib/src/fileIO/io/FileIn.java
 public final class FileIn extends FileIO {
+=======
+public class FileIn extends FileIO {
+>>>>>>> parent of 729c349... Finished off the FileIO part of library:IOLib/src/fileIO/io/in/FileIn.java
+
 	private BufferedReader reader = null;
 	
 	protected FileIn(String path) throws IOException { this(Paths.get(path)); }
+<<<<<<< HEAD:IOLib/src/fileIO/io/FileIn.java
 	public FileIn(Path path) throws FileNotFoundException {
+=======
+	protected FileIn(Path path) throws FileNotFoundException {
+>>>>>>> parent of 729c349... Finished off the FileIO part of library:IOLib/src/fileIO/io/in/FileIn.java
 		super(path);
 		this.reader = new BufferedReader(new FileReader(this.file));
 	}
@@ -39,8 +54,12 @@ public final class FileIn extends FileIO {
 		}
 		
 	}
+<<<<<<< HEAD:IOLib/src/fileIO/io/FileIn.java
 	public BufferedReader getReader() { return reader; }
 	
 	@Override
 	public void close() throws IOException { reader.close(); }
+=======
+	public BufferedReader getReader() { return reader; };
+>>>>>>> parent of 729c349... Finished off the FileIO part of library:IOLib/src/fileIO/io/in/FileIn.java
 }

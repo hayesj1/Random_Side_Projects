@@ -1,6 +1,7 @@
 package fileIO.io;
 
 import java.io.File;
+<<<<<<< HEAD
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -11,10 +12,13 @@ import java.nio.file.Paths;
  * <p>
  * This class is the base class for FileIO classes doing the actual IO operations
  */
+abstract class FileIO {
+=======
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public abstract class FileIO {
+>>>>>>> parent of 729c349... Finished off the FileIO part of library
 
 	/** The File which gets read or written to */
 	protected File file = null;
@@ -31,6 +35,9 @@ public abstract class FileIO {
 	 * @return @see {@link FileIO#file}
 	 */
 	public File getFile() { return file; }
+<<<<<<< HEAD
 	
 	public abstract void close() throws IOException;
+=======
+>>>>>>> parent of 729c349... Finished off the FileIO part of library
 }

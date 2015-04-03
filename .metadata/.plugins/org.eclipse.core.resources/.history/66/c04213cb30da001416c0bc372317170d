@@ -1,5 +1,6 @@
 package fileIO.driver;
 
+<<<<<<< HEAD
 import fileIO.FileIO;
 import fileIO.io.FileIn;
 import fileIO.io.FileOut;
@@ -17,5 +18,13 @@ public class Driver {
 		FileOut out = fio.getFileOut();
 		out.write("Hiya");
 		out.saveFile();
+=======
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+>>>>>>> parent of 729c349... Finished off the FileIO part of library
 	}
+
 }

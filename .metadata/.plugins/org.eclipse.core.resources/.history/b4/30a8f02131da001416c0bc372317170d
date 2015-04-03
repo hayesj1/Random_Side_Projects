@@ -1,4 +1,4 @@
-package fileIO.io;
+package fileIO.io.in;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+
+import fileIO.io.FileIO;
 
 public final class FileIn extends FileIO {
 	private BufferedReader reader = null;
@@ -39,8 +41,12 @@ public final class FileIn extends FileIO {
 		}
 		
 	}
+<<<<<<< HEAD:IOLib/src/fileIO/io/FileIn.java
 	public BufferedReader getReader() { return reader; }
 	
 	@Override
 	public void close() throws IOException { reader.close(); }
+=======
+	public BufferedReader getReader() { return reader; };
+>>>>>>> parent of 729c349... Finished off the FileIO part of library:IOLib/src/fileIO/io/in/FileIn.java
 }
