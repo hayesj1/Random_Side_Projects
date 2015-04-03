@@ -1,0 +1,41 @@
+package operations;
+
+import vector.Dimensions;
+import vector.Vector;
+import vector.VectorFactory;
+
+public class VectorOperations {
+
+	private VectorFactory vf = null;
+	public VectorOperations(Dimensions dimension) {
+		vf = new VectorFactory(dimension.getNumDimensions());
+	}
+	public VectorOperations() { this(Dimensions.TWODIM); }
+	
+	public Vector add(Vector vec1, Vector vec2) {
+		Vector ret = ;
+		return ret;
+	}
+	public Vector subtract(Vector vec1, Vector vec2) {
+		return add(vec1, negate(vec2));
+	}
+	public Vector dotProduct(Vector vec1, Vector vec2) {
+		Vector ret = new Vector();
+		return ret;
+	}
+	public Vector crossProduct(Vector vec1, Vector vec2) {
+		Vector ret = new Vector();
+		return ret;
+	}
+	public Vector scalarProduct(Vector vec, double multiplier) {
+		Vector ret = new Vector();
+		return ret;
+	}
+	public Vector scalarProduct(Vector vec, int multiplier) {
+		Vector ret = new Vector();
+		return ret;
+	}
+	private Vector negate(Vector vec1) {
+		return scalarProduct(vec1, -1);
+	}
+}

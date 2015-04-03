@@ -1,0 +1,22 @@
+package operations;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+import vector.Dimensions;
+import vector.Vector;
+
+public class VectorScanner {
+	@SuppressWarnings("rawtypes")
+	private Vector vector1 = null;
+	private Vector vector2 = null;
+	
+	@SuppressWarnings("rawtypes")
+	public VectorScanner(Scanner s, Dimensions dimensions, boolean useMagnitudeConstructor) {
+		s.useDelimiter(",\\w");
+		System.out.println("Enter vector 1 using the notation: \"magnitude, angle\", no quotes");
+		vector1 = new Vector(dimensions, s.nextDouble(), s.nextDouble());
+		vector2 = new Vector(dimensions, s.nextDouble(), s.nextDouble());
+		s.reset();
+	}
+}

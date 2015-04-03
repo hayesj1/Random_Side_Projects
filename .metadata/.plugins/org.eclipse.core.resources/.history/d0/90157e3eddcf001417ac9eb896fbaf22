@@ -1,0 +1,36 @@
+package vector;
+
+public enum Dimensions {
+	
+	ONEDIM(1),
+	TWODIM(2),
+	THREEDIM(3);
+	
+	private Vector i = null;
+	private Vector j = null;
+	private Vector k = null;
+	private VectorFactory vf = null;
+	
+	private Dimensions(int numDims) {
+		if (numDims == 1) {
+			vf = new VectorFactory(ONEDIM);
+			i = ;
+			j = null;
+			k = null;
+		}else if (numDims == 2) {
+			vf = new VectorFactory(TWODIM);
+			i = unitVecs[0];
+			j = unitVecs[1];
+			k = null;
+		} else if (numDims >= 3) {
+			vf = new VectorFactory(THREEDIM);
+			i = unitVecs[0];
+			j = unitVecs[1];
+			k = unitVecs[2];
+		} else {
+			i = null;
+			j = null;
+			k = null;
+		}
+	}
+}

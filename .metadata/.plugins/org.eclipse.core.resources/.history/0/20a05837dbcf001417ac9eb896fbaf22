@@ -1,0 +1,11 @@
+package vector;
+
+public class VectorFactory {
+
+	public Vector i = null;
+	public Vector j = null;
+	public Vector k = null;
+	public VectorFactory() {
+		
+	}
+}

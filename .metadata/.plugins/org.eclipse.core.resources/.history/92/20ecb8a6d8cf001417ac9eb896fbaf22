@@ -1,0 +1,11 @@
+package vector;
+
+public enum Dimensions {
+	
+	TWODIM({}),
+	THREEDIM({1, 1, 1});
+	
+	private Dimensions(int[] unitVecs) {
+		
+	}
+}

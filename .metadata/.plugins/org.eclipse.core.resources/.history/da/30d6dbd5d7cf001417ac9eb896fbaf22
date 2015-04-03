@@ -1,0 +1,8 @@
+package main;
+
+public class Vector {
+
+	double x;
+	double y;
+	double z;
+}

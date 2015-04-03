@@ -1,0 +1,32 @@
+package vector;
+
+public enum Dimensions {
+	
+	ONEDIM(VectorFactory.),
+	TWODIM(Vector new_i, Vector new_j),
+	THREEDIM(Vector new_i, Vector new_j, Vector new_k);
+	
+	private Vector i = null;
+	private Vector j = null;
+	private Vector k = null;
+	
+	private Dimensions(Vector... unitVecs) {
+		if (unitVecs.length == 1) {
+			i = unitVecs[0];
+			j = null;
+			k = null;
+		}else if (unitVecs.length == 2) {
+			i = unitVecs[0];
+			j = unitVecs[1];
+			k = null;
+		} else if (unitVecs.length >= 3) {
+			i = unitVecs[0];
+			j = unitVecs[1];
+			k = unitVecs[2];
+		} else {
+			i = null;
+			j = null;
+			k = null;
+		}
+	}
+}

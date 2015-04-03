@@ -1,0 +1,18 @@
+package operations;
+
+import main.Vector;
+
+public class VectorOperations {
+
+	public Vector add(Vector vec1, Vector vec2) {
+		Vector ret = new Vector();
+		return ret;
+	}
+	public Vector subtract(Vector vec1, Vector vec2) {
+		return add(vec1, negate(vec2));
+	}
+	
+	private Vector negate(Vector vec1) {
+		return vec1;
+	}
+}

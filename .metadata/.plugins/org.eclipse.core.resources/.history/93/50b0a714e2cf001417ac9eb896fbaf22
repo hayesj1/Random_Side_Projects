@@ -1,0 +1,42 @@
+package vector;
+
+public class Vector {
+
+	Double x = null;
+	Double y = null;
+	Double z = null;
+	Double magnitude = null;
+	Double angle = null;
+	
+	public Vector(Dimensions dimension, Double magnitude, Double angle) {
+		
+	}
+	Vector(Dimensions dimension, Double x, Double y, Double z) {
+		switch(dimension) {
+		case THREEDIM:
+			this.z = z;
+		case TWODIM:
+			this.y = y;
+		case ONEDIM:
+			this.x = x;
+			break;
+		default:
+			break;
+		}
+		switch(dimension) {
+		case THREEDIM:
+			//TODO finish 3d computations
+			magnitude = null;
+			break;
+		case TWODIM:
+			magnitude = Math.sqrt(Math.pow(this.x, 2)+Math.pow(this.y, 2));
+			break;
+		case ONEDIM:
+			magnitude = x;
+			angle = 0.0;
+			break;
+		default:
+			break;
+		}
+	}
+}

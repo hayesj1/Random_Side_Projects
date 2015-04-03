@@ -1,0 +1,11 @@
+package operations;
+
+import java.util.Scanner;
+
+public class VectorScanner {
+	private String line = "";
+	
+	public VectorScanner(Scanner s) {
+		
+	}
+}

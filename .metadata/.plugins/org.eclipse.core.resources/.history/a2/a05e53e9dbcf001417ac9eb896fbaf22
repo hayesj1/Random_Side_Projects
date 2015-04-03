@@ -1,0 +1,19 @@
+package vector;
+
+public class VectorFactory {
+
+	public static Vector i = null;
+	public static Vector j = null;
+	public static Vector k = null;
+	
+	public VectorFactory(Dimensions dimension) {
+		switch(dimension) {
+		case ONEDIM:
+			break;
+		case TWODIM:
+			break;
+		case THREEDIM:
+			break;
+		}
+	}
+}

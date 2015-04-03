@@ -1,0 +1,21 @@
+package vector;
+
+public class Vector {
+
+	Double x = null;
+	Double y = null;
+	Double z = null;
+	Double magnitude = null;
+	Double angle = null;
+	
+	public Vector(Dimensions dimension, Double magnitude, Double angle) {
+		
+	}
+	Vector(Dimensions dimension, Double x, Double y, Double z) {
+		if (z == null) {
+			
+		} else if (y == null) {
+			
+		}
+	}
+}

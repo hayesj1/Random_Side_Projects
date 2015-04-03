@@ -1,0 +1,10 @@
+package vector;
+
+public class Vector {
+
+	Double x = null;
+	Double y = null;
+	Double z = null;
+	Double magnitude = null;
+	Double angle = null;
+}

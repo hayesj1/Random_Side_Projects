@@ -1,0 +1,21 @@
+package operations;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+import vector.Vector;
+
+public class VectorScanner {
+	@SuppressWarnings("rawtypes")
+	private LinkedList<Vector> vectors= null;
+	
+	@SuppressWarnings("rawtypes")
+	public VectorScanner(Scanner s) {
+		vectors = new LinkedList<Vector>();
+		s.useDelimiter(",\\w");
+		while (s.hasNext()) {
+			vectors.add(new Vector());
+		}
+
+		s.reset();
+	}
+}
