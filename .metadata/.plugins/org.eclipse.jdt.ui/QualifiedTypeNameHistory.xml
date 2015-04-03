@@ -9,4 +9,19 @@
 <fullyQualifiedTypeName name="operations.VectorOperations"/>
 <fullyQualifiedTypeName name="operations.VectorScanner"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="fileIO.io.FileIO"/>
+<fullyQualifiedTypeName name="fileIO.io.out.FileOut"/>
+<fullyQualifiedTypeName name="java.nio.file.Path"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="fileIO.exceptions.InvalidArgumentException"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="fileIO.FileIO"/>
+<fullyQualifiedTypeName name="fileIO.io.FileOut"/>
+<fullyQualifiedTypeName name="fileIO.io.FileIn"/>
 </qualifiedTypeNameHistroy>
