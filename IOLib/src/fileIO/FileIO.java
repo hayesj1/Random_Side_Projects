@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 
 import javax.swing.JOptionPane;
 
+import userIO.io.graphicalPopups.Popup;
 import exception.InvalidArgumentToConstructorException;
 import fileIO.io.FileIn;
 import fileIO.io.FileOut;
@@ -38,9 +39,9 @@ public final class FileIO {
 	}
 		public final static FileIO getInstance() {
 			if (instance == null) {
-				String temp = JOptionPane.showInputDialog(null, "Enter the File Path", "File Path", JOptionPane.QUESTION_MESSAGE);
-				boolean read =(JOptionPane.showConfirmDialog(null, "Read from the File?", "Read?", JOptionPane.YES_NO_OPTION)) == JOptionPane.YES_OPTION ? true : false;
-				boolean write = (JOptionPane.showConfirmDialog(null, "Write to the File?", "Write?", JOptionPane.YES_NO_OPTION)) == JOptionPane.YES_OPTION ? true : false;
+				String temp = (String) Popup.getInput("File Path", "Enter the File Path", JOptionPane.QUESTION_MESSAGE);
+				boolean read =(Popup.getConfirmChoice("Read?", "Read from the File?", JOptionPane.YES_NO_OPTION)) == JOptionPane.YES_OPTION ? true : false;
+				boolean write = (Popup.getConfirmChoice("Write?", "Write to the File?", JOptionPane.YES_NO_OPTION)) == JOptionPane.YES_OPTION ? true : false;
 				try {
 					instance = new FileIO(Paths.get(temp).toFile(), read, write);
 				} catch (InvalidArgumentToConstructorException | IOException e) {
