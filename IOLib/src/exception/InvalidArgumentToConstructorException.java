@@ -1,0 +1,12 @@
+package exception;
+
+public class InvalidArgumentToConstructorException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3418636092482061048L;
+
+	public InvalidArgumentToConstructorException() { this("Invalid argument passed to a constructor"); }
+	protected InvalidArgumentToConstructorException(String message){ super(message); }
+}

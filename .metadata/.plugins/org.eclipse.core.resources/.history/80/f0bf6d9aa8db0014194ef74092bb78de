@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 import javax.swing.JOptionPane;
 
-import exception.InvalidArgumentToConstructorException;
+import fileIO.exceptions.InvalidArgumentToConstructorException;
 import fileIO.io.FileIn;
 import fileIO.io.FileOut;
 
