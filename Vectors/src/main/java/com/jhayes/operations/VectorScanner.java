@@ -1,9 +1,9 @@
-package operations;
+package main.java.com.jhayes.operations;
+
+import main.java.com.jhayes.vector.Dimensions;
+import main.java.com.jhayes.vector.Vector;
 
 import java.util.Scanner;
-
-import vector.Dimensions;
-import vector.Vector;
 
 public class VectorScanner {
 	private Vector vector1 = null;
@@ -16,10 +16,10 @@ public class VectorScanner {
 			System.out.println("Enter vector 2 using the notation: \"x-componet y-componet z-componet\", no quotes");
 			vector2 = new Vector(dimensions, s.nextDouble(), s.nextDouble(), s.nextDouble());
 		} else {
-			System.out.println("Enter vector 1 using the notation: \"magnitude, angle(in degrees)\", no quotes");
-			vector1 = new Vector(dimensions, s.nextDouble(), Math.toRadians(s.nextDouble()));
-			System.out.println("Enter vector 2 using the notation: \"magnitude, angle(in degrees)\", no quotes");
-			vector2 = new Vector(dimensions, s.nextDouble(), Math.toRadians(s.nextDouble()));
+			System.out.println("Enter vector 1 using the notation: \"magnitude, theta, phi, inRadians(true or false)\", no quotes, no commas");
+			vector1 = new Vector(s.nextDouble(), s.nextDouble(), s.nextDouble(), s.nextBoolean());
+			System.out.println("Enter vector 2 using the notation: \"magnitude, theta, phi, inRadians(true or false)\", no quotes, no commas");
+			vector2 = new Vector(s.nextDouble(), s.nextDouble(), s.nextDouble(), s.nextBoolean());
 		}
 	}
 

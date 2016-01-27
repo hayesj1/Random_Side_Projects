@@ -1,9 +1,11 @@
 package main;
 
-import java.util.Scanner;
+import main.java.com.jhayes.operations.VectorOperations;
+import main.java.com.jhayes.operations.VectorScanner;
+import main.java.com.jhayes.vector.Dimensions;
+import main.java.com.jhayes.vector.Vector;
 
-import operations.*;
-import vector.*;
+import java.util.Scanner;
 
 public class VecMain {
 
@@ -55,49 +57,50 @@ public class VecMain {
 		do {
 			System.out.println("How may we serve you?");
 			System.out.println("1: add the vectors(1 + 2)");
-			System.out.println("2: subtract vector 2 from vector 1(1 - 2)");
-			System.out.println("3: subtract vector 1 from vector 2(2 - 1)");
+			System.out.println("2: subtract main.java.com.jhayes.vector 2 from main.java.com.jhayes.vector 1(1 - 2)");
+			System.out.println("3: subtract main.java.com.jhayes.vector 1 from main.java.com.jhayes.vector 2(2 - 1)");
 			System.out.println("4: dot product(1 dot 2)");
 			System.out.println("5: cross product (1 x 2)");
 			System.out.println("6: cross product (2 x 1)");
 			System.out.println("7: scalar product (1 x scalar)");
 			System.out.println("8: scalar product (2 x scalar)");
+			System.out.println("0: exit");
 			choice = keyboard.next();
 			if (choice == "0"){
 				break;
 			}
 			switch(choice) {
-			case "1":
-				result = vecOper.add(vecScan.getVector1(), vecScan.getVector2());
-				break;
-			case "2":
-				result = vecOper.subtract(vecScan.getVector1(), vecScan.getVector2());
-				break;
-			case "3":
-				result = vecOper.subtract(vecScan.getVector2(), vecScan.getVector1());
-				break;
-			case "4":
-				result = vecOper.dotProduct(vecScan.getVector1(), vecScan.getVector2());
-				break;
-			case "5":
-				result = vecOper.crossProduct(vecScan.getVector1(), vecScan.getVector2());
-				break;
-			case "6":
-				result = vecOper.crossProduct(vecScan.getVector2(), vecScan.getVector1());
-				break;
-			case "7":
-				System.out.println("Enter the scalar multiplier:");
-				scalar = Double.valueOf(keyboard.next());
-				result = vecOper.scalarProduct(vecScan.getVector1(), scalar);
-				break;
-			case "8":
-				System.out.println("Enter the scalar multiplier:");
-				scalar = Double.valueOf(keyboard.next());
-				result = vecOper.scalarProduct(vecScan.getVector2(), scalar);
-				break;
-			default:
-				System.out.println("you must enter a whole number 0-8");
-				continue;
+				case "1":
+					result = vecOper.add(vecScan.getVector1(), vecScan.getVector2());
+					break;
+				case "2":
+					result = vecOper.subtract(vecScan.getVector1(), vecScan.getVector2());
+					break;
+				case "3":
+					result = vecOper.subtract(vecScan.getVector2(), vecScan.getVector1());
+					break;
+				case "4":
+					result = vecOper.dotProduct(vecScan.getVector1(), vecScan.getVector2());
+					break;
+				case "5":
+					result = vecOper.crossProduct(vecScan.getVector1(), vecScan.getVector2());
+					break;
+				case "6":
+					result = vecOper.crossProduct(vecScan.getVector2(), vecScan.getVector1());
+					break;
+				case "7":
+					System.out.println("Enter the scalar multiplier:");
+					scalar = Double.valueOf(keyboard.next());
+					result = vecOper.scalarProduct(vecScan.getVector1(), scalar);
+					break;
+				case "8":
+					System.out.println("Enter the scalar multiplier:");
+					scalar = Double.valueOf(keyboard.next());
+					result = vecOper.scalarProduct(vecScan.getVector2(), scalar);
+					break;
+				default:
+					System.out.println("you must enter a whole number 0-8");
+					continue;
 			}
 			System.out.println("This result is: " + result);
 		} while (true);

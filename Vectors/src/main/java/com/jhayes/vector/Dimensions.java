@@ -1,4 +1,4 @@
-package vector;
+package main.java.com.jhayes.vector;
 
 public enum Dimensions {
 	

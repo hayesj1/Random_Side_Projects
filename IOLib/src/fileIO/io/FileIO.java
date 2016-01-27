@@ -9,7 +9,7 @@ import java.nio.file.Paths;
  * <b>DO NOT USE THE CLASS FOR IO WITH FILES <br></b>
  * <b>USE FileIO IN PACKAGE fileIO TO READ/WRITE TO FILES</b>
  * <p>
- * This class is the base class for FileIO classes doing the actual IO operations
+ * This class is the base class for FileIO classes doing the actual IO main.java.com.jhayes.operations
  */
 abstract class FileIO {
 
