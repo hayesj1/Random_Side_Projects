@@ -19,9 +19,13 @@
 <fullyQualifiedTypeName name="java.nio.file.Path"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="fileIO.exceptions.InvalidArgumentException"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="fileIO.FileIO"/>
 <fullyQualifiedTypeName name="fileIO.io.FileOut"/>
 <fullyQualifiedTypeName name="fileIO.io.FileIn"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="javax.swing.Icon"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="userIO.io.consoleInput.ConsoleInput"/>
+<fullyQualifiedTypeName name="userIO.io.graphicalPopups.Popup"/>
 </qualifiedTypeNameHistroy>
