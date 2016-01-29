@@ -1,4 +1,4 @@
-package main;
+package main.java.com.jhayes;
 
 import main.java.com.jhayes.operations.VectorOperations;
 import main.java.com.jhayes.operations.VectorScanner;

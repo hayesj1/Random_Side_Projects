@@ -1,4 +1,4 @@
-package exception;
+package main.java.com.jhayes.exception;
 
 public class InvalidArgumentToConstructorException extends Exception {
 

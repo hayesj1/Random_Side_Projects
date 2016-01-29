@@ -1,12 +1,10 @@
-package fileIO.io;
+package main.java.com.jhayes.fileIO.io;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import fileIO.io.FileIO;
 
 public final class FileOut extends FileIO {
 

@@ -1,4 +1,4 @@
-package fileIO.io;
+package main.java.com.jhayes.fileIO.io;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 /** <b>WARNING!! <br></b>
  * <b>DO NOT USE THE CLASS FOR IO WITH FILES <br></b>
- * <b>USE FileIO IN PACKAGE fileIO TO READ/WRITE TO FILES</b>
+ * <b>USE FileIO IN PACKAGE main.java.com.jhayes.fileIO TO READ/WRITE TO FILES</b>
  * <p>
  * This class is the base class for FileIO classes doing the actual IO main.java.com.jhayes.operations
  */

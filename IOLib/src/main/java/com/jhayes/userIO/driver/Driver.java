@@ -1,7 +1,7 @@
-package userIO.driver;
+package main.java.com.jhayes.userIO.driver;
 
-import userIO.io.consoleInput.ConsoleInput;
-import userIO.io.graphicalPopups.Popup;
+import main.java.com.jhayes.userIO.io.consoleInput.ConsoleInput;
+import main.java.com.jhayes.userIO.io.graphicalPopups.Popup;
 
 public class Driver {
 

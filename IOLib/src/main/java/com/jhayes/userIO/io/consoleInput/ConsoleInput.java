@@ -1,4 +1,4 @@
-package userIO.io.consoleInput;
+package main.java.com.jhayes.userIO.io.consoleInput;
 
 import java.util.Scanner;
 

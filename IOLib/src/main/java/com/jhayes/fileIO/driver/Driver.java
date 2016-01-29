@@ -1,8 +1,8 @@
-package fileIO.driver;
+package main.java.com.jhayes.fileIO.driver;
 
-import fileIO.FileIO;
-import fileIO.io.FileIn;
-import fileIO.io.FileOut;
+import main.java.com.jhayes.fileIO.FileIO;
+import main.java.com.jhayes.fileIO.io.FileIn;
+import main.java.com.jhayes.fileIO.io.FileOut;
 
 public class Driver {
 

@@ -1,9 +1,7 @@
-package userIO.io.graphicalPopups;
+package main.java.com.jhayes.userIO.io.graphicalPopups;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+import java.awt.*;
 /**
  * Shortcut Class with static methods for calling {@link JOptionPane}'s dialog methods
  * 

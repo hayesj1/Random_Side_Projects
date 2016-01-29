@@ -1,4 +1,4 @@
-package fileIO;
+package main.java.com.jhayes.fileIO;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,10 +6,10 @@ import java.nio.file.Paths;
 
 import javax.swing.JOptionPane;
 
-import userIO.io.graphicalPopups.Popup;
-import exception.InvalidArgumentToConstructorException;
-import fileIO.io.FileIn;
-import fileIO.io.FileOut;
+import main.java.com.jhayes.userIO.io.graphicalPopups.Popup;
+import main.java.com.jhayes.exception.InvalidArgumentToConstructorException;
+import main.java.com.jhayes.fileIO.io.FileIn;
+import main.java.com.jhayes.fileIO.io.FileOut;
 
 public final class FileIO {
 
